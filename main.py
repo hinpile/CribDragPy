@@ -18,7 +18,7 @@ def drag(m: str, n: str, d: str, e: str, g: str, k: str) -> list:
     return [d, e, k]
 
 
-while True:
+while len(dec1) < len(msg1) or len(dec1) < len(msg2):
     guessing: int = int(input("guessing: "))
     guess: str = input("guess: ")
     if guessing == 1:
@@ -30,8 +30,6 @@ while True:
     key = res[2]
     print(dec1)
     print(dec2)
-    if len(dec1) >= len(msg1) and len(dec1) >= len(msg2):
-        break
 
 print()
 print(msg1)
